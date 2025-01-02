@@ -5,15 +5,16 @@ import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
-import javax.xml.crypto.Data;
+import java.time.LocalDateTime;
 
-@Entity
+
 @Table(name = "users")
 @Setter
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
+@Entity
 public class UserEntity {
 
     @Id
@@ -32,9 +33,9 @@ public class UserEntity {
 
     @CreationTimestamp
     @Column(updatable = false, name = "created_at")
-    private Data createdAt;
+    private LocalDateTime createdAt;
 
     @UpdateTimestamp
     @Column(name = "updated_at")
-    private Data updatedAt;
+    private LocalDateTime updatedAt;
 }
