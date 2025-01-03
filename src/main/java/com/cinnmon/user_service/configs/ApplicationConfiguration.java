@@ -1,4 +1,4 @@
-package com.cinnmon.user_service.config;
+package com.cinnmon.user_service.configs;
 
 import com.cinnmon.user_service.repository.UserRepository;
 import org.springframework.context.annotation.Bean;
